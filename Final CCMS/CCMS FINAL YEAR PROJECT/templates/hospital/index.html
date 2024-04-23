@@ -1,0 +1,45 @@
+{% extends 'hospital/homebase.html' %}
+{% load static %}
+{% block content %}
+<head>
+  <style media="screen">
+    .jumbotron {
+      margin-top: 0px;
+      height: 20vh;
+      margin-bottom: 0px;
+      /* background-image: url('{% static "images/background.jpg" %}'); */
+      background-color: rgb(1, 193, 91);
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+
+    .jumbotron h5,
+    h1 {
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: white;
+      margin-top: -45px;
+
+    }
+
+    .alert {
+      margin: 0px;
+    }
+  </style>
+</head>
+<br>
+<br>
+
+<div class="jumbotron" style="margin-bottom: 0px;margin-top: 0px;">
+  <br>
+  <h1 >Cancer care Management System</h1>
+ 
+</div>
+
+<br><br>
+
+{% include "hospital/admin_doctor_patient_card.html" %}
+<br><br><br>
+
+{% endblock content %}

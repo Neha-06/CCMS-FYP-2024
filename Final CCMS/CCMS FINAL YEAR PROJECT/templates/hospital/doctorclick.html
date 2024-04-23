@@ -1,0 +1,37 @@
+{% extends 'hospital/homebase.html' %} {% block content %}
+
+<br />
+
+<div class="jumbotron" style="margin-bottom: 0px">
+  <h1 class="text-xl-center mb-2 font-weight-bold">Welcome to CCMS</h1>
+
+  <div
+    class="card align-content-center align-items-center justify-content-center mx-auto"
+    style="width: 32rem"
+  >
+    <img
+      class="card-img-top"
+      src="/static/images/doctor.jpg"
+      alt="Card image cap"
+    />
+    <div class="card-body">
+      <h3 class="card-title text-center text-capitalize font-weight-bold">
+        Hello, Doctor
+      </h3>
+      <h4 class="card-text text-secondary mb-5">
+        Greetings, esteemed Doctor!
+      </h4>
+      <div class="d-flex flex-row justify-content-around">
+        <a class="btn btn-danger btn-lg" href="/doctorsignup" role="button"
+          >Apply</a
+        >
+        <a class="btn btn-success btn-lg" href="/doctorlogin" role="button"
+          >Login</a
+        >
+        >
+      </div>
+    </div>
+  </div>
+</div>
+
+{% endblock content %}

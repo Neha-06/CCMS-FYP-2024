@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en" dir="ltr">
+  <head>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <title>CCMS</title>
+  </head>
+
+  <body>
+    {% include "hospital/navbar.html" %}
+    <br /><br />
+
+    <form method="POST">
+      {% csrf_token %}
+      <div class="container card shadow-lg  text-center justify-content-center align-items-center mt-5" style="width: 50rem">
+        <div class="card-body m-5">
+          <h5 class="card-title fs-4 font-weight-bold mb-4"> Feedback form!</h5>
+          <div class="col-md-12">
+            <div class="form-group">
+              <p>{{ form.as_p }}</p>
+            </div>
+          </div>
+          
+          <input
+            type="submit"
+            value="Send Message"
+            class="btn btn-success btn-block p-3 mt-4"
+          />
+        </div>
+      </div>
+    </form>
+    <br /><br /><br />
+    {% include "hospital/footer.html" %}
+  </body>
+</html>
